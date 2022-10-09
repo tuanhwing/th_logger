@@ -3,14 +3,18 @@ library th_logger;
 import 'package:flutter/foundation.dart';
 import 'package:logger/logger.dart';
 
+/// Class used to print log
 class THLogger {
-  static final THLogger _singleton = THLogger._();
+  THLogger._();
 
+  ///Singleton
   factory THLogger() {
     return _singleton;
   }
-  THLogger._();
-  final _logger = Logger();
+
+  static final THLogger _singleton = THLogger._();
+
+  final Logger _logger = Logger();
 
   /// Log a message at level [Level.debug].
   void d(dynamic message, [dynamic error, StackTrace? stackTrace]) {
