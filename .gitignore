@@ -1,5 +1,5 @@
 # Miscellaneous
-./pubspec.lock
+/pubspec.lock
 *.class
 *.log
 *.pyc
